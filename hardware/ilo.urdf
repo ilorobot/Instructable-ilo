@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="ilo-urdf-7">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00490783420918746 -5.30469796700128E-08 0.0315729776765226"
+        rpy="0 0 0" />
+      <mass
+        value="0.250307144757034" />
+      <inertia
+        ixx="0.000213473192530182"
+        ixy="4.01374626621353E-09"
+        ixz="4.02178711493103E-07"
+        iyy="0.00114651762472442"
+        iyz="-7.2199668923163E-11"
+        izz="0.00132229377723203" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ilo-urdf-7/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ilo-urdf-7/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="1.11045059586756E-05 1.03928027443689E-05 -0.0179367481605297"
+        rpy="0 0 0" />
+      <mass
+        value="0.0444760076473146" />
+      <inertia
+        ixx="4.7788268171649E-06"
+        ixy="-3.2745602324075E-09"
+        ixz="1.03909048511462E-10"
+        iyy="4.77595974599419E-06"
+        iyz="8.60070886222724E-11"
+        izz="7.75483825455209E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ilo-urdf-7/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ilo-urdf-7/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel-BR"
+    type="continuous">
+    <origin
+      xyz="-0.056 -0.034 0.0136"
+      rpy="-1.5708 -0.56296 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="1.11050020291936E-05 1.03925947268213E-05 0.0163580139726555"
+        rpy="0 0 0" />
+      <mass
+        value="0.0444760065822957" />
+      <inertia
+        ixx="4.77882675709365E-06"
+        ixy="-3.27470608223607E-09"
+        ixz="1.03956878758499E-10"
+        iyy="4.77595930805196E-06"
+        iyz="8.59883541902259E-11"
+        izz="7.75483776984197E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ilo-urdf-7/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ilo-urdf-7/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel-FL"
+    type="continuous">
+    <origin
+      xyz="0.054 0.068295 0.0136"
+      rpy="-1.5708 1.0163 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="1.1104523000266E-05 1.03922513332855E-05 -0.0163580097013963"
+        rpy="0 0 0" />
+      <mass
+        value="0.0444755630334847" />
+      <inertia
+        ixx="4.7787714178547E-06"
+        ixy="-3.2747677000643E-09"
+        ixz="-1.03898041524732E-10"
+        iyy="4.7759048487278E-06"
+        iyz="-8.60127606414989E-11"
+        izz="7.75473370758875E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ilo-urdf-7/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ilo-urdf-7/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel-BL"
+    type="continuous">
+    <origin
+      xyz="-0.056 0.068295 0.0136"
+      rpy="1.5708 -1.5464 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="1.11047664756586E-05 1.03922006593204E-05 0.0179367520983216"
+        rpy="0 0 0" />
+      <mass
+        value="0.0444755630006394" />
+      <inertia
+        ixx="4.77877148608738E-06"
+        ixy="-3.27468260665288E-09"
+        ixz="-1.03892097388522E-10"
+        iyy="4.77590476496781E-06"
+        iyz="-8.60006395173879E-11"
+        izz="7.75473369195022E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ilo-urdf-7/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ilo-urdf-7/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel-FR"
+    type="continuous">
+    <origin
+      xyz="0.054 -0.034 0.0136"
+      rpy="-1.5708 0.068343 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+</robot>
